@@ -1,0 +1,105 @@
+Ejercicio #1: Operadores de Asignación Compuesta
+Escribir un programa que solicite al usuario dos números enteros y luego realice las siguientes
+operaciones utilizando operadores de asignación compuesta: suma, resta, multiplicación y
+división. Imprime el resultado después de cada operación.
+void main() {
+ print('las operaciones con dos numeros');
+ int a=5;
+ int b=3;
+ // a+=b;
+ print("las suma de dos numeros es: ${a+=b}");
+ //a-=b;
+ print('la resta es: ${a-=b}');
+ //a*=b;
+ print('la multiplicacion es: ${a*=b}');
+ //a ~/= b;
+ print('la division de dos numeros es: ${a~/=b}');
+ }
+Ejercicio #2:
+Operadores, Tipos de Datos y Variables:
+Escribe un programa que calcule el área de un círculo. El radio debe ser ingresado por el usuario.
+Utiliza operadores para calcular el área y asegúrate de utilizar el tipo de dato adecuado para
+representar el radio y el área.
+void main() {
+const double PI=3.141516;
+double R=1.5;
+print("El area del circulo es: ${PI*(R*R)}");
+ }
+EJERCICIO #3:
+Operadores de Asignación Compuesta
+Escribir un programa que solicite al usuario dos números enteros y luego realice las siguientes
+operaciones utilizando operadores de asignación compuesta: suma, resta, multiplicación y
+división. Imprime el resultado después de cada operación.
+void main() {
+int num1=-3;
+if(num1>0){
+ print("El numero $num1 es positivo");
+}else if(num1==0){
+ print("El numero $num1 es cero");
+}else if(num1<0){
+ print("El numero $num1 es negativo");
+}
+}
+Ejercicio #4
+Encontrar el mayor de tres números:
+Escribe un programa que solicite al usuario tres números enteros y luego determine e imprima el
+mayor de los tres.
+void main() {
+ int S = 10;
+ int M = 20;
+ int N = 9;
+ int Y = S;
+ if( M > S) {
+ Y = M;
+ }
+ if(N > Y){
+ Y = N;
+ }
+ print("El numero mayor de los 3 digitos es: $Y");
+ }
+Ejercicio #5
+Calcular el factorial de un número: Escribe un programa que solicite al usuario un número entero
+positivo y luego calcule e imprima su factorial.
+void main() {
+ int x = 5;
+ if (x >= 0) {
+ int fact = 1;
+ for (int i = 1; i <= x; i++) {
+ fact *= i;
+ }
+ print("El factorial del número $x es $fact");
+ } else {
+ print("El número es negativo");
+ }
+}
+Ejercicio #6
+Imprimir números pares del 1 al N: Escribe un programa que solicite al usuario un número entero
+positivo N e imprima todos los números pares del 1 al N.
+void main() {
+ int x = 30;
+ if(x>0){
+ for (int i = 1; i <= x; i++){
+ if(i % 2 == 0){
+ print(i);
+ }
+ }
+ }else ("El numero es negativo");
+}
+Ejercicio #7
+Contar números pares e impares: Escribe un programa que solicite al usuario un rango de
+números (inicio y fin) y cuente e imprima la cantidad de números pares e impares dentro de ese
+rango.
+void main() {
+ int inicio = 1;
+ int fin = 15;
+ int pares = 0;
+ int impares = 0;
+ for(int i=inicio;i<=fin;i++){
+ if(i%2==0){
+ pares++;
+ }else{
+ impares++;
+ }
+ }
+print("El total de numeros pares es: $pares y el total de numeros impares es: $impares");
+}
